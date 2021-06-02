@@ -8,7 +8,7 @@ public class Ball {
 
     public Ball(int position, int ballNo) {
         this.position = position;
-        this.ballNo = ballNo;
+        this.ballNo = new BallNumber(ballNo).getNo();
     }
 
     public BallStatus play(Ball ball) {
